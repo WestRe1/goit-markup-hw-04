@@ -164,9 +164,10 @@ img {
 
 .hero-section {
     background-color: var(--border-bg-color);
-    background-image: url(../images/background-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background: ;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -262,11 +263,12 @@ img {
 .list-team-icon {
     display: flex;
     gap: 10px;
+    margin-top: 16px;
 }
 .list-team-icon-item {
     width: 44px;
     height: 44px;
-    margin-top: 16px;
+    
     fill: var(--icon-color);
 }
 .link-icon {
@@ -291,7 +293,7 @@ img {
 }
 
 .list-clients-item {
-    width: 180px;
+    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -363,6 +365,7 @@ img {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 .social-network {
     margin-left: 70px;
@@ -391,10 +394,14 @@ img {
     margin-left: 0;
 }
 .footer-link-icon {
-    display: inherit;
+    display: flex;
+    width: 100%;
+    height: 100%;
     fill: var(--main-light-color);
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;  
 }
 /* portfolio */
 
@@ -422,6 +429,7 @@ img {
 }
 .link-works {
     text-decoration: none;
+    color: inherit;
 }
 .list-works-item {
     width: 370px;
@@ -429,7 +437,8 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.list-works-item:hover {
+.list-works-item:hover,
+.list-works-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .description-works {
@@ -480,7 +489,6 @@ img {
     background-color: var(--accent-color);
     color: var(--main-light-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    padding: 6px 25px;
 }
 .button-hero:hover,
 .button-hero:focus {
